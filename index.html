@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESIGN COORP</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/DigitalGlitch.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/examples/js/postprocessing/UnrealBloomPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/GlitchPass.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+ 
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><span class="online">• </span>[ LYCRIAN_DVD X BCYDESIGN ]</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+  <!-- 3D Scene -->
+  <canvas id="background-canvas"></canvas>
+
+
+  <!-- LYCRIAN x BCYDESIGN -->
+  <div class="intro"><h1 id="intro-text">LYCRIAN x BCYDESIGN</h1></div>
+  <div id="about-section">
+    <h2>[ Hakkımızda ] <span class="gradient-text">/</span></h2>
+    <h4>LYCRIAN_DVD- [ LYCRIAN_DVD / MUSIC PRODUCTION / WEB DEVELOPMENT ]</h4>
+    <h4>BCYDESIGN - [ BCYDESIGN / GRAPHIC DESIGN / WEB DEVELOPMENT ]</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam accusantium laudantium facere nam numquam. Cum ea exercitationem molestias quo sint temporibus doloremque architecto ipsum dolorem quis! Sequi dolorum architecto deleniti quo cupiditate perferendis tempora, impedit, repudiandae tenetur enim earum ducimus.</p>
+  </div>
+
+  <div id="about-section2">
+    <h2>[ 10+ YIL DENEYİM ] <span class="gradient-text">/</span></h2>
+    <h4>LYCRIAN_DVD - [ LYCRIAN_DVD / MUSIC PRODUCTION / WEB DEVELOPMENT ]</h4>
+    <h4>BCYDESIGN - [ BCYDESIGN / GRAPHIC DESIGN / WEB DEVELOPMENT ]</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat commodi delectus dolores sequi sed obcaecati deserunt perspiciatis eius rerum eligendi cumque at nulla aspernatur ipsa, in eos facere doloremque. Delectus tempora officia sed ad laudantium, aliquid voluptatibus. Placeat, reprehenderit libero quisquam praesentium, voluptatibus, reiciendis officia omnis sapiente aut id voluptatum!</p>
+  </div>
+
+  <div id="about-section3">
+    <h2>[ 2000+ MÜŞTERİ ] <span class="gradient-text">/</span></h2>
+    <h4>LYCRIAN_DVD - [ LYCRIAN_DVD / MUSIC PRODUCTION / WEB DEVELOPMENT ]</h4>
+    <h4>BCYDESIGN - [ BCYDESIGN / GRAPHIC DESIGN / WEB DEVELOPMENT ]</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus expedita molestiae beatae in aperiam soluta quas, mollitia explicabo temporibus ex ipsa voluptatem, doloribus repellendus sapiente natus aliquam tempora, porro enim?</p>
+  </div>
+
+  <!-- Müzik İkonu -->
+<div id="music-icon">
+    <i class="fa-solid fa-music"></i>
+  </div>
+  
+  <!-- MP3 Dosyası -->
+  <audio id="background-music" src="assets/lycrian.wav"></audio>
+<!-- Ses Kontrol Çubuğu -->
+   <div id="volume-control">
+    <input id="volume-slider" type="range" min="0" max="100" value="40">
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Bize Ulaşın</h2>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-spotify"></i></a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <h2>Size Ulaşalım</h2>
+      <form id="contact-form">
+        <label for="name">İsim Soyisim:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <div class="kvkk">
+          <input type="checkbox" id="kvkk" name="kvkk" required>
+          <label for="kvkk">KVKK'yı okudum ve kabul ediyorum.</label>
+        </div>
+        
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
